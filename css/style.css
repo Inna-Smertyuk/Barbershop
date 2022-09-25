@@ -111,7 +111,13 @@ a.nav-link:hover,
 }
 
 .section-box{
+    width: 100%;
     padding: 130px 55px;
+}
+
+.about-section, .why-us_section{
+    display: flex;
+    justify-content: space-between;
 }
 
 p.section-description {
@@ -179,22 +185,35 @@ p.section-description {
 /* Price styles */
 
 .price-list {
-    display: inline-block;
+    display: flex;
 }
 
+.price-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .price-item p,
 .price-item span {
-    display: inline-block;
+   
     font-size: 18px;
     line-height: 30px;
     color: var(--text-secondary);
 }
 
 /* Why us styles */
-
+.number-container{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 100px;
+}
 .number-box {
-    width: 170px;
+    min-width: 170px;
+    width: 48%;
     height: 132px;
+   margin-top: 30px;
     background: #F7F7F7;
 }
 
@@ -214,7 +233,11 @@ p.section-description {
 }
 
 /* Masters styles */
-
+.masters-list{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 300px;
+}
 .master-card p {
     font-size: 18px;
     line-height: 25px;
