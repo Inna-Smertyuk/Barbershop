@@ -8,7 +8,7 @@
         href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Courgette&family=Frijole&family=Great+Vibes&family=Open+Sans:wght@400;600;700&family=Parisienne&family=Raleway:wght@400;700&family=Sail&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>BarberShop</title>
 </head>
 <body>
     <header class="header">
@@ -27,10 +27,10 @@
                 <svg class="logo-img">
                     <use href='./images/Icons/sprite.svg.svg#icon-Logosvg'></use>
                 </svg>
-                <li><a href="#about-section"class="nav-link">О нас</a></li>
+                <li><a href="#about-section"class="nav-link">About us</a></li>
                 <li><a href="#price-section"class="nav-link">Услуги и цены</a></li>
-                <li><a href="#masters-section"class="nav-link">Мастера</a></li>
-                <li><a href="#footer"class="nav-link">Контакты</a></li>
+                <li><a href="#masters-section"class="nav-link">Masters</a></li>
+                <li><a href="#footer"class="nav-link">Contacts</a></li>
             </ul>
             </div>
             <div class="btn-box">
@@ -84,7 +84,7 @@
         </section>
 
         <!-- Price -->
-        <section class="section-box why-us_section" id="price-section">
+        <section class="section-box price-section" id="price-section">
             <span class="suptitle-secondary">Проведи время в компании лучших мастеров</span>
             <h2 class="section-title lighten">Услуги и цены</h2>
             <div class="price-box">
@@ -129,7 +129,7 @@
      </section>
        
 
-     <section class="section-box" id="why-section">
+     <section class="section-box why-us_section" id="why-section">
         <div class="number-container">
         <div class="number-box">
             <p>600</p>
@@ -159,7 +159,7 @@
         <section class="section-box master-box" id="masters-section">
             <span class="suptitle-primary">для настоящих ценителей атмосферы</span>
             <h2 class="section-title">Наши мастера</h2>
-            <ul class="maters-list">
+            <ul class="masters-list">
                 <li class="master-card">
                     <img src="./images/Masters/img1.jpg" alt="">
                     <p>John Smith</p>
@@ -248,10 +248,22 @@
         <section class="section-box" id="">
             <span class="suptitle-primary">На латинском языке “барба” означает “борода”</span>
             <div class="image-gallery">
-                <img src="./images/Gallery/Rectangle 25.jpg" alt="Стрижка машинкой">
-                <img src="./images/Gallery/Rectangle 26.jpg" alt="Наносят пену">
-                <img src="./images/Gallery/Rectangle 27.jpg" alt="Пропаривание лица">
-                <img src="./images/Gallery/Rectangle 28.jpg" alt="Стрижка опасной бритвой">
+                <div class="gallery-card">
+                    <img src="./images/Gallery/Rectangle 25.jpg" alt="Стрижка машинкой" style="height: 100%">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum quis, vel alias ut facilis iure odit qui assumenda, sint illo excepturi? Repellendus reprehenderit officia laborum vel ab assumenda harum?</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="./images/Gallery/Rectangle 26.jpg" alt="Наносят пену" style="height: 100%">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum quis, vel alias ut facilis iure odit qui assumenda, sint illo excepturi? Repellendus reprehenderit officia laborum vel ab assumenda harum?</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="./images/Gallery/Rectangle 27.jpg" alt="Пропаривание лица" style="height: 100%">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum quis, vel alias ut facilis iure odit qui assumenda, sint illo excepturi? Repellendus reprehenderit officia laborum vel ab assumenda harum?</div>
+                </div>
+                <div class="gallery-card">
+                    <img src="./images/Gallery/Rectangle 28.jpg" alt="Стрижка опасной бритвой" style="height: 100%">
+                    <div class="gallery-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatum quis, vel alias ut facilis iure odit qui assumenda, sint illo excepturi? Repellendus reprehenderit officia laborum vel ab assumenda harum?</div>
+                </div>
             </div>
         </section>
 
@@ -259,20 +271,32 @@
     
     <!-- Footer -->
     <footer class="footer" id="footer">
-    <div>
+    <div class="footer-form">
         <h2 class="section-title lighten">Онлайн-запись</h2>
-        <form action="">
-            <input type="submit" class="primary-btn"/>
+        <form action="#" class="footer-form-box">
+            <label for="userName"  class="field-label">
+                
+                <input type="text" name="userName" id="userName" class="form-field" required/>
+                <legend>Имя*</legend>
+            </label>
+            <label for="userName" class="field-label">
+                
+                <input type="tel" name="userPhone" class="form-field" required/>
+                <legend>Телефон*</legend>
+            </label>
+            
+            <textarea name="userMessage" class="form-field" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <button type="submit" class="primary-btn">Отправить</button>
         </form>
     </div>
 
     <div class="footer-contacts">
         <h2 class="section-title lighten">Контакты</h2>
         <div class="contacts-box">
-            <adress>ул. Васильковая, 7А
+            <adress>ул. Васильковая, 7А<br>
             Киев, 08132</adress>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            <a href="tel:">+38 044 111 11 11</a>
+            <a href="mailto:">barbershop@email.com</a>
         </div>
         <div class="shedule-box">
         <span class="suptitle-secondary lighten">время работы</span>
